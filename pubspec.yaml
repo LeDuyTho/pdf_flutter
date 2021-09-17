@@ -1,0 +1,30 @@
+name: pdf_flutter
+description: Displaying PDF from Network, File and assets easily like we display
+  Image in Flutter Widget.
+version: 1.2.0
+homepage: https://github.com/erluxman/pdf_flutter
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_cache_manager: ^3.0.0-nullsafety.1
+  http: ^0.13.0
+  path_provider: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic: ^1.11.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.erluxman.pdf_flutter
+        pluginClass: PdfFlutterPlugin
+      ios:
+        pluginClass: PdfFlutterPlugin
