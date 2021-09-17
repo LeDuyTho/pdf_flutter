@@ -1,5 +1,5 @@
 # pdf_flutter
-[![pub package](https://img.shields.io/pub/v/pdf_flutter.svg)](https://pub.dartlang.org/packages/pdf_flutter)
+Latest version: 1.2.0
 
 Inspired by [Pdf_Viewer_Plugin](https://github.com/lubritto/Pdf_Viewer_Plugin) 😇
 Wrapped around [AndroidPdfViewer](https://github.com/barteksc/AndroidPdfViewer) on Android. 🙏🏼
@@ -7,7 +7,10 @@ Wrapped around [AndroidPdfViewer](https://github.com/barteksc/AndroidPdfViewer) 
 ### 1. Add `pdf_flutter`on `pubspec.yml` 
 
     dependencies:
-      pdf_flutter: ^version
+      pdf_flutter:
+        git:
+          url: git://github.com/LeDuyTho/pdf_flutter
+          ref: 1.2.0
 
 ### 2. On iOS enable PDF preview like this:
 

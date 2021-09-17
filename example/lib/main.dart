@@ -53,8 +53,7 @@ class _PDFListBodyState extends State<PDFListBody> {
               _navigateToPage(
                 title: 'Pdf from networkUrl',
                 child: PDF.network(
-                    'http://dxinh89.somee.com/hocba.pdf'
-                  //'https://google-developer-training.github.io/android-developer-fundamentals-course-concepts/en/android-developer-fundamentals-course-concepts-en.pdf',
+                  'https://google-developer-training.github.io/android-developer-fundamentals-course-concepts/en/android-developer-fundamentals-course-concepts-en.pdf',
                 ),
               );
             },
@@ -64,8 +63,7 @@ class _PDFListBodyState extends State<PDFListBody> {
             builder: (context) {
               return ElevatedButton(
                 onPressed: () async {
-                  final file = await FilePicker.platform.pickFiles(
-                      allowedExtensions: ['pdf'], type: FileType.custom);
+                  final file = await FilePicker.platform.pickFiles(allowedExtensions: ['pdf'], type: FileType.custom);
                   if (file?.files[0].path != null) {
                     _navigateToPage(
                       title: 'PDF from file',
