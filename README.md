@@ -24,7 +24,7 @@ Add this on `ios/Runner/info.plist`:
 #### Load PDF from network (caches PDF from network)
 
         PDF.network(
-                'https://raw.githubusercontent.com/FlutterInThai/Dart-for-Flutter-Sheet-cheet/master/Dart-for-Flutter-Cheat-Sheet.pdf',
+                'https://google-developer-training.github.io/android-developer-fundamentals-course-concepts/en/android-developer-fundamentals-course-concepts-en.pdf',
                 height: 500,
                 width: 300,
         )
